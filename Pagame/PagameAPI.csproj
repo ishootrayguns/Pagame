@@ -5,5 +5,34 @@
   </PropertyGroup>
 
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Trufi' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pagame' " />
+  <ItemGroup>
+    <ProjectReference Include="..\Pagame.Business\Pagame.Business.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Pagame.Business.Interfaces\Pagame.Business.Interfaces.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Pagame.Database\Pagame.Database.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Pagame.Entities\Pagame.Entities.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Pagame.Repository\Pagame.Repository.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Pagame.Repository.Interfaces\Pagame.Repository.Interfaces.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Pagame.DatabaseUpgrader\Pagame.DatabaseUpgrader.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
 </Project>

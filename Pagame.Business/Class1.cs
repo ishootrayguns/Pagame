@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataManagement.buSINESS
+namespace DataManagement.Business
 {
     public class Class1
     {

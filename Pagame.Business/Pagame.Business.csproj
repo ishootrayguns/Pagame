@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Pagame.Entities\Pagame.Entities.csproj" />
+    <ProjectReference Include="..\Pagame.Business.Interfaces\Pagame.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\Pagame.Repository.Interfaces\Pagame.Repository.Interfaces.csproj" />
+  </ItemGroup>
 </Project>
